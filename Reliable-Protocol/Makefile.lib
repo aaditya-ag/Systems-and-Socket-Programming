@@ -1,0 +1,3 @@
+librsocket.a: rsocket.c rsocket.h
+	gcc -c -o rsocket.o rsocket.c -DNDEBUG
+	ar r librsocket.a rsocket.o
